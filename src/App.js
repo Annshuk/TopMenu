@@ -7,8 +7,9 @@ import './style.css';
 const groupByType = groupBy(
   [
     { type: 'services', name: 'service 1', id: 1 },
-    { type: 'services', name: 'service 2', id: 2 },
+    { type: 'services', name: 'service 1', id: 2 },
     { type: 'products', name: 'product 1', id: 3 },
+    { type: 'products', name: 'product 1', id: 5 },
     { type: 'contact', name: 'Contact Us', id: 4 },
   ],
   'type'
