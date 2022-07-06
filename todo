@@ -1,0 +1,14 @@
+{
+              entitledMenu.map(({type, name, id}) => {
+                const menuItem = groupByType[type];  
+
+                return <Fragment key={id}>     
+                  {menuItem.length >  1  ? <NavDropdown title={type} id="basic-nav-dropdown">                          
+                            <NavDropdown.Item>
+                              {name}
+                            </NavDropdown.Item>
+                        
+                        </NavDropdown> :  <Nav.Link href="#link">{name}</Nav.Link>}
+                </Fragment>
+              })
+            }
